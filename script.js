@@ -32,11 +32,15 @@ function nextQuestion(){
       correctAnswer = true;
       break;
     case 3:
-    question.textContent = 'Apakah kamu manusia?';
-    correctAnswer = true;
+      question.textContent = 'Apakah kamu manusia?';
+      correctAnswer = true;
     break;
+    case 4:
+      question.textContent = 'Pluto merupakan sebuah planet?'
+      correctAnswer = false;
+      break;
     default:
-      question.textContent = 'You finished the quiz!'
+      question.textContent = 'Selamat kamu telah menyelesaikan Kuisi ini!'
       correctAnswer = null;
   } 
 }
